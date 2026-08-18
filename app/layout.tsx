@@ -11,6 +11,7 @@ import { Preloader } from "@/components/ui/preloader";
 import { NoiseOverlay } from "@/components/ui/noise-overlay";
 import { ThemeProvider } from "@/providers/theme-provider";
 import { LanguageProvider } from "@/providers/language-provider";
+import { Analytics } from "@vercel/analytics/react";
 
 const fontSans = Outfit({
   subsets: ["latin"],
@@ -125,6 +126,7 @@ export default function RootLayout({
             <FloatingWhatsApp />
           </LanguageProvider>
         </ThemeProvider>
+        <Analytics />
       </body>
     </html>
   );
