@@ -28,7 +28,7 @@ const fontArabic = IBM_Plex_Sans_Arabic({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "https://buildify.studio"),
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "https://buildify-studio.vercel.app"),
   title: {
     default: `${siteConfig.name} — Premium Digital Studio`,
     template: `%s | ${siteConfig.name}`,

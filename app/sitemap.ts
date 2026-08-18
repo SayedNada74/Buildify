@@ -1,7 +1,7 @@
 import { MetadataRoute } from "next";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://buildify.studio";
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://buildify-studio.vercel.app";
   const routes = ["", "/services", "/work", "/work/grand-cafe", "/about", "/contact"];
 
   const englishRoutes = routes.map((route) => ({
