@@ -1,0 +1,118 @@
+<!DOCTYPE html><html dir="rtl" lang="ar"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>UI ولا UX؟ 🤔</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&amp;family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "background": "#0f172a",
+                      "on-background": "#f8fafc",
+                      "surface": "#1e293b",
+                      "surface-variant": "#334155",
+                      "primary": "#f8fafc",
+                      "on-primary": "#0f172a",
+                      "secondary": "#2dd4bf",
+                      "on-secondary": "#0f172a",
+                      "outline-variant": "#475569"
+              },
+              "fontFamily": {
+                      "headline": [
+                              "IBM Plex Sans Arabic",
+                              "sans-serif"
+                      ],
+                      "body": [
+                              "Inter",
+                              "sans-serif"
+                      ]
+              }
+      },
+          },
+        }
+      </script>
+</head>
+<body class="bg-background text-on-background min-h-screen flex flex-col font-headline selection:bg-secondary selection:text-on-secondary">
+<!-- Header -->
+<header class="flex justify-between items-center px-8 md:px-16 py-6 border-b border-outline-variant/30">
+<div class="font-bold text-2xl tracking-tight text-secondary">
+        BUILDIFY
+    </div>
+<div class="font-body text-outline-variant">
+        01 / 08
+    </div>
+</header>
+<!-- Main Content Canvas -->
+<main class="flex-grow flex items-center justify-center p-6 md:p-16 max-w-7xl mx-auto w-full">
+<div class="w-full grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-24 items-center">
+<!-- Content Side -->
+<div class="flex flex-col justify-center relative z-10 order-2 md:order-1">
+<div class="mb-6 inline-flex items-center gap-2 bg-secondary/10 text-secondary px-4 py-1.5 rounded-full font-body text-sm font-medium self-start">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+                    أساسيات التصميم
+                </div>
+<h1 class="font-headline text-5xl md:text-6xl lg:text-7xl font-bold text-primary mb-6 leading-tight">
+                    UI ولا UX؟ 🤔
+                </h1>
+<p class="font-body text-lg md:text-xl text-outline-variant mb-10 max-w-lg leading-relaxed">
+                    الاتنين مش نفس الحاجة. وده الفرق ببساطة.
+                </p>
+<div class="flex items-center gap-4">
+<button class="bg-secondary text-on-secondary font-body font-semibold text-base px-8 py-4 rounded-xl hover:bg-secondary/90 transition-colors flex items-center gap-3">
+<span>اقرأ المزيد</span>
+<span class="material-symbols-outlined text-xl">arrow_back</span>
+</button>
+</div>
+</div>
+<!-- Visual Side -->
+<div class="flex items-center justify-center relative min-h-[400px] order-1 md:order-2">
+<!-- Decorative Abstract Elements -->
+<div class="absolute inset-0 opacity-10 pointer-events-none" style="background-image: radial-gradient(#2dd4bf 1px, transparent 1px); background-size: 32px 32px;"></div>
+<div class="absolute top-1/4 right-1/4 w-48 h-48 bg-secondary/20 rounded-full blur-[80px]"></div>
+<div class="absolute bottom-1/4 left-1/4 w-64 h-64 bg-primary/5 rounded-full blur-[100px]"></div>
+<!-- Floating Cards -->
+<div class="relative w-full max-w-md aspect-square flex items-center justify-center perspective-1000">
+<!-- UX Card -->
+<div class="absolute bg-surface border border-outline-variant/30 rounded-2xl p-8 shadow-2xl w-72 transform -translate-x-12 translate-y-12 -rotate-6 transition-all hover:rotate-0 hover:z-20 hover:scale-105 duration-500 backdrop-blur-sm">
+<div class="flex items-center gap-4 mb-6">
+<div class="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-2xl">psychology</span>
+</div>
+<span class="font-headline text-2xl font-bold text-primary">UX</span>
+</div>
+<p class="font-body text-base text-outline-variant leading-relaxed">
+                            Experience 🧠<br>
+<span class="text-sm opacity-70 mt-2 block">التجربة، البحث، المنطق</span>
+</p>
+</div>
+<!-- UI Card -->
+<div class="absolute bg-secondary/10 border border-secondary/30 rounded-2xl p-8 shadow-2xl shadow-secondary/10 w-72 transform translate-x-12 -translate-y-12 rotate-3 transition-all hover:-rotate-3 hover:z-20 hover:scale-105 duration-500 backdrop-blur-md">
+<div class="flex items-center gap-4 mb-6">
+<div class="w-12 h-12 rounded-xl bg-secondary flex items-center justify-center text-on-secondary">
+<span class="material-symbols-outlined text-2xl">visibility</span>
+</div>
+<span class="font-headline text-2xl font-bold text-primary">UI</span>
+</div>
+<p class="font-body text-base text-primary/80 leading-relaxed">
+                            Looks 👀<br>
+<span class="text-sm opacity-70 mt-2 block">الشكل، الألوان، الخطوط</span>
+</p>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="flex justify-between items-center px-8 md:px-16 py-6 border-t border-outline-variant/30 mt-auto">
+<div class="font-body text-outline-variant hover:text-primary transition-colors">
+<a href="#">Privacy Policy</a>
+</div>
+<div class="font-headline font-semibold text-primary">
+        @buildify0
+    </div>
+</footer>
+</body></html>

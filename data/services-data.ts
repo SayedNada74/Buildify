@@ -1,0 +1,75 @@
+import { Service } from "@/types/service";
+
+export const servicesData: Service[] = [
+  {
+    id: "web-design-development",
+    slug: "web-design-development",
+    title: "Web Design & Development",
+    shortDescription: "Bespoke digital experiences built around your brand identity and business objectives.",
+    fullDescription: "We craft custom digital presences that combine editorial aesthetic design with high-performance engineering.",
+    iconName: "layout",
+    capabilities: [
+      { title: "Custom UI/UX Architecture", description: "Tailored visual design systems." },
+      { title: "Performance Engineering", description: "Sub-second load times and high Core Web Vitals." },
+      { title: "Responsive Fluidity", description: "Flawless layouts across mobile, tablet, and desktop." },
+    ],
+    businessOutcome: "Brand Authority & Engagement",
+    featured: true,
+  },
+  {
+    id: "landing-pages",
+    slug: "landing-pages",
+    title: "High-Impact Landing Pages",
+    shortDescription: "Targeted experiences designed around messaging clarity and high conversion rates.",
+    fullDescription: "Laser-focused landing pages engineered for product launches, marketing campaigns, and lead generation.",
+    iconName: "target",
+    capabilities: [
+      { title: "Conversion Architecture", description: "Strategic placement of CTAs and messaging." },
+      { title: "Frictionless Motion", description: "Subtle engagement animations without distraction." },
+    ],
+    businessOutcome: "Maximum Lead Conversion",
+    featured: true,
+  },
+  {
+    id: "ecommerce",
+    slug: "ecommerce",
+    title: "E-Commerce Experiences",
+    shortDescription: "Digital commerce designed to make discovering and buying products simple.",
+    fullDescription: "Seamless shopping interfaces prioritizing product presentation, mobile usability, and checkout conversion.",
+    iconName: "shopping-bag",
+    capabilities: [
+      { title: "Product Storytelling", description: "High-impact visual presentation." },
+      { title: "Mobile Checkout Optimization", description: "Reduced cart abandonment." },
+    ],
+    businessOutcome: "Higher Transaction Volume",
+    featured: true,
+  },
+  {
+    id: "saas-platforms",
+    slug: "saas-platforms",
+    title: "SaaS & Digital Platforms",
+    shortDescription: "Scalable platform architectures engineered for long-term growth and user retention.",
+    fullDescription: "Custom digital products and platform foundations built for real user workflows.",
+    iconName: "layers",
+    capabilities: [
+      { title: "Scalable Platform Foundations", description: "Clean, maintainable architecture." },
+      { title: "User Retention UI", description: "Workflow clarity and usability." },
+    ],
+    businessOutcome: "Long-Term Scalability",
+    featured: true,
+  },
+  {
+    id: "ui-ux-design",
+    slug: "ui-ux-design",
+    title: "UI/UX Design Systems",
+    shortDescription: "Interfaces that feel clear, intuitive, elegant, and intentional across every device.",
+    fullDescription: "Bespoke design systems that establish visual consistency and user delight.",
+    iconName: "smartphone",
+    capabilities: [
+      { title: "Design Tokens & Primitives", description: "Consistent UI components." },
+      { title: "Accessibility (WCAG AA)", description: "Inclusive interaction design." },
+    ],
+    businessOutcome: "Frictionless User Experience",
+    featured: true,
+  },
+];
