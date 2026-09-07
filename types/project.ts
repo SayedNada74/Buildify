@@ -25,6 +25,8 @@ export interface Project {
   client: string;
   summary: string;
   tags: string[];
+  techStack?: string[]; // Defined technology IDs for branded icons
+  year?: string;
   coverImage: string;
   heroImage?: string;
   liveUrl?: string; // Direct live deployment URL for client demo

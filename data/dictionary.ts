@@ -75,6 +75,12 @@ export interface DictionaryContent {
       category: string;
       summary: string;
     }>;
+    filterAll?: string;
+    filterFeatured?: string;
+    filterPlatforms?: string;
+    filterEcommerce?: string;
+    filterPortfolios?: string;
+    filterHospitality?: string;
     upcomingTitle: string;
   };
   brandVideo: {
@@ -272,6 +278,10 @@ export const dictionary: Record<Language, DictionaryContent> = {
       featuredBadge: "Featured Project",
       visitLive: "Visit Live Website",
       viewDetails: "View Details",
+      filterAll: "All Projects",
+      filterPlatforms: "Academic & Tools",
+      filterEcommerce: "E-Commerce & Menus",
+      filterPortfolios: "Portfolios",
       grandCafe: {
         category: "Restaurant Digital Experience",
         title: "Grand Café",
@@ -288,25 +298,30 @@ export const dictionary: Record<Language, DictionaryContent> = {
         cta: "View Case Study",
       },
       projects: {
+        "sinai-tech-portal": {
+          title: "Sinai Tech Portal",
+          category: "Academic Portal & Resource Hub",
+          summary: "A comprehensive educational portal serving students and faculty at Sinai University with real-time academic resources, schedules, and developer documentation.",
+        },
         "grand-cafe": {
-          title: "Grand Café",
-          category: "Restaurant & Hospitality",
-          summary: "A digital menu website built to showcase the café's offerings. We focused on a fast, mobile-friendly design, making it easy for customers to browse the menu and contact the business.",
-        },
-        "sayed-nada-portfolio": {
-          title: "Sayed Nada Portfolio",
-          category: "Personal Portfolio",
-          summary: "A personal portfolio website focused on clean presentation. We built a simple user experience with subtle animations to highlight the designer's projects without slowing down the site.",
-        },
-        "su-it-guide": {
-          title: "SU IT Guide",
-          category: "Educational Guide",
-          summary: "A digital resource guide for IT students. We organized study materials and roadmaps into a simple, mobile-friendly interface for quick access on the go.",
+          title: "Grand Cafe Platform",
+          category: "E-Commerce & Digital Menu Experience",
+          summary: "An interactive digital ordering system and dynamic menu application crafted for a luxury café, featuring fluid animations and tactile product presentation.",
         },
         "ziko-portfolio": {
           title: "Ziko Portfolio",
-          category: "Personal Portfolio",
-          summary: "A personal showcase for creative projects. Designed with a card-based layout and clear typography to make project discovery and navigation as frictionless as possible.",
+          category: "Interactive Creative Developer Portfolio",
+          summary: "A bespoke portfolio experience highlighting smooth scroll physics, custom typography, and dynamic WebGL shaders.",
+        },
+        "sayed-nada-portfolio": {
+          title: "Sayed Nada Portfolio",
+          category: "Frontend & 3D Web Developer",
+          summary: "A responsive, component-driven portfolio featuring a 60+ FPS Three.js WebGL interactive background with viewport throttling, fluid GSAP ScrollTrigger animations, and zero-FOUC theme switching.",
+        },
+        "su-it-guide": {
+          title: "Moodle Calendar Sync & Course Matcher",
+          category: "Student Productivity Tool",
+          summary: "Constructed a student productivity tool for Sinai University to scrape, parse, and synchronize Moodle homework assignments, lectures, and exams with Vercel serverless proxy functions.",
         },
       },
       upcomingTitle: "Modular Project Architecture",
@@ -525,6 +540,10 @@ export const dictionary: Record<Language, DictionaryContent> = {
       featuredBadge: "شغل مميز",
       visitLive: "زور الموقع لايف",
       viewDetails: "تفاصيل المشروع",
+      filterAll: "كل المشاريع",
+      filterPlatforms: "المنصات والأدوات",
+      filterEcommerce: "المطاعم والتجارة",
+      filterPortfolios: "معارض الأعمال",
       grandCafe: {
         category: "تجربة رقمية للمطاعم",
         title: "Grand Café — جراند كافيه",
@@ -541,25 +560,30 @@ export const dictionary: Record<Language, DictionaryContent> = {
         cta: "شوف تفاصيل المشروع",
       },
       projects: {
+        "sinai-tech-portal": {
+          title: "Sinai Tech Portal",
+          category: "بوابة أكاديمية ومركز مصادر",
+          summary: "بوابة تعليمية شاملة تخدم طلاب وأعضاء هيئة التدريس بجامعة سيناء بالمصادر الأكاديمية اللحظية والجداول والتوثيق البرمجي.",
+        },
         "grand-cafe": {
-          title: "Grand Café",
-          category: "المطاعم والضيافة",
-          summary: "موقع إلكتروني صممناه لعرض قائمة الطعام (المنيو) بشكل ديجيتال سريع. ركزنا على إن التصميم يكون مريح على الموبايل عشان يسهل على العملاء تصفح الأصناف والتواصل مع المطعم مباشرة.",
-        },
-        "sayed-nada-portfolio": {
-          title: "Sayed Nada Portfolio",
-          category: "بورتفوليو شخصي",
-          summary: "موقع شخصي لعرض الأعمال (بورتفوليو). ركزنا على بناء تجربة مستخدم بسيطة، مع ترتيب المشاريع بشكل يبرز المهارات. استخدمنا تأثيرات حركية خفيفة عشان تدي روح للموقع.",
-        },
-        "su-it-guide": {
-          title: "SU IT Guide",
-          category: "دليل أكاديمي",
-          summary: "دليل أكاديمي مبسط لطلاب الكلية. الموقع بيجمع مصادر المذاكرة في مكان واحد متقسم بشكل واضح، وتصميمه مبني أساساً عشان يكون سريع وسهل التصفح من الموبايل.",
+          title: "Grand Cafe Platform",
+          category: "تجارة إلكترونية ومنيو تفاعلي",
+          summary: "نظام طلب رقمي تفاعلي وتطبيق قائمة طعام ديناميكي لكافيه فاخر مع حركات سلسة وعرض جذاب للمنتجات.",
         },
         "ziko-portfolio": {
           title: "Ziko Portfolio",
-          category: "معرض أعمال",
-          summary: "معرض أعمال شخصي مبني بتصميم بسيط. اعتمدنا فيه على طريقة الكروت لعرض المشاريع بوضوح، عشان الزاير يقدر يتصفح ويوصل لروابط المشاريع الحية بسهولة.",
+          category: "بورتفوليو مطور إبداعي تفاعلي",
+          summary: "تجربة بورتفوليو مخصصة تبرز فيزياء التمرير الناعم والتايبوجرافي المخصص وشيدرز WebGL تفاعلية.",
+        },
+        "sayed-nada-portfolio": {
+          title: "Sayed Nada Portfolio",
+          category: "مطور واجهات أمامية وثلاثي الأبعاد",
+          summary: "بورتفوليو تفاعلي متجاوب مبني بالكومبوننتس يتميز بخلفية Three.js WebGL تفاعلية بسرعة 60+ FPS وحركات GSAP ScrollTrigger مع Lenis.",
+        },
+        "su-it-guide": {
+          title: "Moodle Calendar Sync & Course Matcher",
+          category: "أداة إنتاجية للطلاب",
+          summary: "أداة إنتاجية لطلاب جامعة سيناء لمزامنة واجبات ومحاضرات وامتحانات نظام Moodle مع دوال Serverless على Vercel وتخزين محلي فوري.",
         },
       },
       upcomingTitle: "نظام مشاريع مرن",

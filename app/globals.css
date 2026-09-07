@@ -49,12 +49,6 @@
     transition: background-color 0.25s ease, color 0.25s ease;
   }
 
-  @media (pointer: fine) {
-    html, body, a, button {
-      cursor: none !important;
-    }
-  }
-
   body {
     min-height: 100vh;
     display: flex;
@@ -138,6 +132,14 @@ html[dir="rtl"] .animate-marquee {
 
 .animate-marquee:hover {
   animation-play-state: paused;
+}
+
+/* Custom Cursor Hide for interactive view showcase */
+@media (pointer: fine) {
+  [data-cursor="view"],
+  [data-cursor="view"] * {
+    cursor: none !important;
+  }
 }
 
 /* Reduced motion accessibility reset */
